@@ -15,6 +15,17 @@ namespace ChatChat
         public App()
         {
             InitializeComponent();
+
+            TreeNode myContactNode = new TreeNode("My Contacts");
+            TreeNode friend1 = new TreeNode("Friend 1");
+            TreeNode friend2 = new TreeNode("Friend 2");
+            TreeNode friend3 = new TreeNode("Friend 3");
+            
+            myContactNode.Nodes.Add(friend1);
+            myContactNode.Nodes.Add(friend2);
+            myContactNode.Nodes.Add(friend3);
+            
+            treeView.Nodes.Add(myContactNode);
         }
     }
 }
